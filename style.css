@@ -1,0 +1,784 @@
+/* فونت و رنگ کلی */
+body {
+    font-family: "Vazir", sans-serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffe4ec);
+    color: #3c3c3c;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  /* هدر و منو */
+  header {
+    background: radial-gradient(circle, #ffd6e8 0%, #ffc1dc 100%);
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    width: 90px;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 17px;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #c2185b;
+  }
+  
+  /* بخش‌های اصلی */
+  .hero {
+    background: linear-gradient(to right, #fdeef3, #fff0f5);
+    padding: 60px 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+  }
+  .hero h1 {
+    font-size: 32px;
+    color: #d81b60;
+  }
+  .hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #5c5c5c;
+  }
+  
+  /* بخش ویژگی‌ها */
+  .features {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  }
+  .features h2 {
+    color: #c2185b;
+    margin-bottom: 20px;
+  }
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  .features ul li {
+    margin: 12px 0;
+    font-size: 18px;
+    background-color: #ffe4ec;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  /* فرم تماس */
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffc1dc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  .contact-form label {
+    font-weight: bold;
+    color: #d81b60;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  /* دکمه‌ها */
+  .btn {
+    background: linear-gradient(to right, #d81b60, #f06292);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+  
+  /* مقاله‌های بلاگ */
+  .blog-section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  }
+  .blog-section h2 {
+    color: #d81b60;
+    margin-bottom: 20px;
+  }
+  .blog-section article {
+    background-color: #fff0f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .blog-section article h3 {
+    color: #c2185b;
+    margin-bottom: 10px;
+  }
+  .blog-section article p {
+    color: #555;
+    line-height: 1.6;
+  }
+  .blog-section article a {
+    color: #d81b60;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* فوتر */
+  footer {
+    background-color: #ffc1dc;
+    padding: 25px;
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-top: 40px;
+    border-top: 2px solid #f8bbd0;
+  }
+  .beauty-theme {
+    background: linear-gradient(to right, #ffe0f0, #fff0f5);
+    border-left: 6px solid #d81b60;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 16px;
+  }
+  /* رنگ‌بندی دسته‌ها در بلاگ */
+
+.beauty-theme {
+    background-color: #ffe4ec;
+    border-left: 6px solid #ff69b4;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+  }
+  
+  .fashion-theme {
+    background-color: #e0f7fa;
+    border-left: 6px solid #00bcd4;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+  }
+  
+  .mind-theme {
+    background-color: #f3e5f5;
+    border-left: 6px solid #9c27b0;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
+  }
+  
+  .news-theme {
+    background-color: #fff3e0;
+    border-left: 6px solid #ff9800;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+  }
+  /* طراحی واکنش‌گرا برای موبایل */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    .hero h1 {
+      font-size: 22px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .blog-section {
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .blog-section h2 {
+      font-size: 20px;
+    }
+  
+    .blog-section article h3 {
+      font-size: 18px;
+    }
+  
+    .blog-section article p {
+      font-size: 15px;
+    }
+  
+    .categories ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    .categories ul li {
+      list-style: none;
+      background-color: #eee;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+  
+    footer {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  /* حالت شب */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode a {
+    color: #90caf9;
+  }
+  
+  body.dark-mode .blog-section {
+    background-color: #1a1a1a;
+    border-left-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  .subscribe {
+    background-color: #fff0f5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.2);
+  }
+  
+  .subscribe h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .subscribe button:hover {
+    background-color: #e91e63;
+  }
+  .article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+  }
+  .article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+  }
+  /* تصویر مقاله */
+.article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+  }
+  
+  /* بخش مقاله با تم گرم و شلوغ */
+  .article-content {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 1.9;
+    color: #333;
+  }
+  
+  /* لیست ترندها */
+  .article-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .article-content ul li {
+    background-color: #ffe0cc;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #b33;
+  }
+  
+  /* حالت شب برای مقاله */
+  .dark-mode .article-content {
+    background-color: #2c1e1e;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .article-content ul li {
+    background-color: #4a2c2c;
+    color: #ffb3b3;
+  }
+  /* تصویر مقاله */
+.article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+  }
+  
+  /* بخش مقاله با تم گرم و شلوغ */
+  .article-content {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 1.9;
+    color: #333;
+  }
+  
+  /* لیست ترندها */
+  .article-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .article-content ul li {
+    background-color: #ffe0cc;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #b33;
+  }
+  
+  /* حالت شب برای مقاله */
+  .dark-mode .article-content {
+    background-color: #2c1e1e;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .article-content ul li {
+    background-color: #4a2c2c;
+    color: #ffb3b3;
+  }
+  /* تصویر مقاله */
+.article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 0, 100, 0.3);
+    margin: 30px auto;
+    display: block;
+  }
+  
+  /* بخش مقاله با طراحی شلوغ */
+  .article-content {
+    background: linear-gradient(135deg, #ffe0f0, #fff8cc);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 100, 0, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 2;
+    color: #333;
+  }
+  
+  /* لیست ترندها */
+  .article-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .article-content ul li {
+    background-color: #ffccf2;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #c03;
+    border-left: 6px solid #ff66b2;
+  }
+  
+  /* حالت شب برای مقاله */
+  .dark-mode .article-content {
+    background: linear-gradient(135deg, #2a1a2a, #1f1f1f);
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .article-content ul li {
+    background-color: #4a2c4a;
+    color: #ffb3ff;
+    border-left-color: #ff66b2;
+  }
+  /* گرید دسته‌بندی‌ها */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  /* باکس دسته‌بندی */
+  .category-box {
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    font-family: "Vazirmatn", sans-serif;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* رنگ‌های مخصوص هر دسته */
+  .category-box.style {
+    background: linear-gradient(135deg, #ff66b2, #ffccf2);
+    color: #3a003a;
+  }
+  
+  .category-box.skincare {
+    background: linear-gradient(135deg, #ffa94d, #ffe0cc);
+    color: #5a2a00;
+  }
+  
+  .category-box.fragrance {
+    background: linear-gradient(135deg, #ffd43b, #fff3bf);
+    color: #5c4a00;
+  }
+  
+  .category-box.trends {
+    background: linear-gradient(135deg, #66d9ff, #ccf2ff);
+    color: #00334d;
+  }
+  
+  /* لینک داخل باکس */
+  .category-box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: rgba(255,255,255,0.2);
+    color: inherit;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-box a:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+  
+  /* حالت شب */
+  .dark-mode .category-box {
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  }
+  
+  .dark-mode .category-box.style {
+    background: linear-gradient(135deg, #660033, #33001a);
+    color: #ffccf2;
+  }
+  
+  .dark-mode .category-box.skincare {
+    background: linear-gradient(135deg, #663300, #331a00);
+    color: #ffe0cc;
+  }
+  
+  .dark-mode .category-box.fragrance {
+    background: linear-gradient(135deg, #665500, #332a00);
+    color: #fff3bf;
+  }
+  
+  .dark-mode .category-box.trends {
+    background: linear-gradient(135deg, #00334d, #001a26);
+    color: #ccf2ff;
+  }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .category-box {
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    font-family: "Vazirmatn", sans-serif;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-box.style {
+    background: linear-gradient(135deg, #ff66b2, #ffccf2);
+    color: #3a003a;
+  }
+  
+  .category-box.skincare {
+    background: linear-gradient(135deg, #ffa94d, #ffe0cc);
+    color: #5a2a00;
+  }
+  
+  .category-box.fragrance {
+    background: linear-gradient(135deg, #ffd43b, #fff3bf);
+    color: #5c4a00;
+  }
+  
+  .category-box.trends {
+    background: linear-gradient(135deg, #66d9ff, #ccf2ff);
+    color: #00334d;
+  }
+  
+  .category-box a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: rgba(255,255,255,0.2);
+    color: inherit;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-box a:hover {
+    background-color: rgba(255,255,255,0.4);
+  }
+  /* تصویر پوستر برند */
+.article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 100, 0.3);
+    margin: 30px auto;
+    display: block;
+  }
+  
+  /* بخش معرفی برند */
+  .article-content {
+    background: linear-gradient(135deg, #fff0f5, #ffe0cc);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(255, 100, 0, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 2;
+    color: #333;
+  }
+  
+  /* لیست ویژگی‌ها */
+  .article-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .article-content ul li {
+    background-color: #ffccf2;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #c03;
+    border-left: 6px solid #ff66b2;
+  }
+  
+  /* حالت شب */
+  .dark-mode .article-content {
+    background: linear-gradient(135deg, #2a1a2a, #1f1f1f);
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .article-content ul li {
+    background-color: #4a2c4a;
+    color: #ffb3ff;
+    border-left-color: #ff66b2;
+  }
+  .article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 0, 100, 0.3);
+    margin: 30px auto;
+    display: block;
+  }
+  
+  .article-content {
+    background: linear-gradient(135deg, #fff0f5, #ffe0cc);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 0 30px rgba(255, 100, 0, 0.2);
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 2;
+    color: #333;
+  }
+  
+  .article-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .article-content ul li {
+    background-color: #ffccf2;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #c03;
+    border-left: 6px solid #ff66b2;
+  }
+  
+  .dark-mode .article-content {
+    background: linear-gradient(135deg, #2a1a2a, #1f1f1f);
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .article-content ul li {
+    background-color: #4a2c4a;
+    color: #ffb3ff;
+    border-left-color: #ff66b2;
+  }
+  body {
+    font-family: "Vazirmatn", sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe0cc);
+    color: #333;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .logo-text {
+    font-size: 48px;
+    color: #ff66b2;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    color: #c03;
+    margin-bottom: 40px;
+  }
+  
+  .entry-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .entry-button {
+    display: inline-block;
+    background-color: #ff66b2;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .entry-button:hover {
+    background-color: #c03;
+  }
+  
+  footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #999;
+  }

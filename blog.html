@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>بلاگ و اخبار | آسرایی نووتشاه</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="لوگو" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 خانه</a></li>
+        <li><a href="blog.html">📰 بلاگ و اخبار</a></li>
+        <li><a href="about.html">💡 درباره ما</a></li>
+        <li><a href="contact.html">📞 تماس با ما</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌓 تغییر حالت شب/روز</button>
+  </header>
+
+  <section class="hero">
+    <h1>📰 بلاگ و اخبار ترند</h1>
+    <p>مطالب دسته‌بندی‌شده درباره زیبایی، مد، استایل، خودشناسی و ترندهای روز</p>
+  </section>
+  <section class="category-grid">
+    <div class="category-box style">
+      <h2>👗 استایل</h2>
+      <p>مقالات مربوط به پوشاک و ترندهای ظاهری</p>
+      <a href="post-paris-trends.html">مشاهده</a>
+    </div>
+  
+    <div class="category-box skincare">
+      <h2>🧴 مراقبت پوست</h2>
+      <p>راهنمای روتین‌ها و محصولات پوستی</p>
+      <a href="post-skincare-guide.html">مشاهده</a>
+    </div>
+  
+    <div class="category-box fragrance">
+      <h2>🌸 عطر و رایحه</h2>
+      <p>مقایسه رایحه‌ها و نت‌های محبوب</p>
+      <a href="post-fragrance-comparison.html">مشاهده</a>
+    </div>
+  
+    <div class="category-box trends">
+      <h2>🔥 اخبار ترند</h2>
+      <p>هفته‌های مد و طراحی‌های جدید</p>
+      <a href="post-busy-design.html">مشاهده</a>
+    </div>
+  </section>
+  <section class="categories">
+    <h2>📂 دسته‌بندی‌ها</h2>
+    <ul>
+      <li><a href="#beauty">💄 زیبایی</a></li>
+      <li><a href="#fashion">👗 مد و استایل</a></li>
+      <li><a href="#mind">🧠 خودشناسی</a></li>
+      <li><a href="#news">📰 اخبار ترند</a></li>
+    </ul>
+  </section>
+
+  <section id="beauty" class="blog-section beauty-theme">
+    <h2>💄 زیبایی</h2>
+    <article>
+      <h3>۵ رنگ رژ لب که امسال ترند شدن</h3>
+      <p>از صورتی نود تا قرمز آلبالویی—این رنگ‌ها امسال همه جا هستن!</p>
+      <a href="post-lipsticks.html">ادامه مطلب</a>
+    </article>
+  </section>
+
+  <section id="fashion" class="blog-section fashion-theme">
+    <h2>👗 مد و استایل</h2>
+    <article>
+      <h3>استایل مینیمال چطور شکل گرفت؟</h3>
+      <p>از دهه ۹۰ تا امروز، مینیمالیسم چطور وارد دنیای مد شد؟</p>
+      <a href="post-minimal-style.html">ادامه مطلب</a>
+    </article>
+  </section>
+
+  <section id="mind" class="blog-section mind-theme">
+    <h2>🧠 خودشناسی</h2>
+    <article>
+      <h3>چطور استایل ما بازتاب شخصیت ماست؟</h3>
+      <p>لباس‌هایی که می‌پوشیم، حرف‌هایی درباره درونمون می‌زنن—بیشتر از چیزی که فکر می‌کنیم.</p>
+      <a href="post-style-personality.html">ادامه مطلب</a>
+    </article>
+  </section>
+
+  <section id="news" class="blog-section news-theme">
+    <h2>📰 اخبار ترند</h2>
+    <article>
+      <h3>ترندهای پاییز ۲۰۲۵ در هفته مد پاریس</h3>
+      <p>از کت‌های اورسایز تا رنگ‌های گرم، امسال چی مد شده؟</p>
+      <a href="post-paris-trends.html">ادامه مطلب</a>
+    </article>
+
+    <article>
+      <h3>چرا طراحی شلوغ توی بلاگ‌ها محبوب شده؟</h3>
+      <p>از مینیمالیسم تا ماکسیمالیسم—طراحی شلوغ داره دوباره ترند می‌شه!</p>
+      <a href="post-busy-design.html">ادامه مطلب</a>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 آسرایی نووتشاه | ارتباط: asra.style.creator@gmail.com</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
